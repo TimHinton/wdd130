@@ -10,6 +10,8 @@
 #background {
     height:725px;
     background-color: #FFFFFF;
+    grid-column: 1/11;
+    grid-row: 4/9;
 }
 #logo_link {
     padding-top: 5px;
@@ -43,10 +45,6 @@
 #home-grid {
     display: grid;
     grid-template-columns: repeat(10, 1fr);
-}
-#background {
-    grid-column: 1/11;
-    grid-row: 4/9;
 }
 body {
     font-family: "Roboto Condensed", Helvetica, sans-serif;
@@ -86,13 +84,11 @@ nav a:hover, .book:hover, .join:hover {
     border: 10px solid #000000;
     transition: transform .5s;
     box-shadow: 5px 5px 10px #6f7364;
+    width: 100%;
 }
 .card-img:hover {
     opacity: .6;
     transform: scale(1.1);
-}
-.card-img, .mountains {
-    width: 100%;
 }
 .rivers-card {
     grid-column: 2/4;
@@ -126,7 +122,8 @@ main section img {
     box-shadow: 5px 5px 10px #6f7364;
 }
 .rivers-card, .camping-card, .rapids-card {
-    margin: 200px 0;
+    margin: 50px auto;
+    width: 60%;
 }
 nav a {
     color: black;
@@ -173,7 +170,6 @@ footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
-
 }
 footer p {
     font-size: 1.2em;
