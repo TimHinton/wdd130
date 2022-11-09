@@ -30,6 +30,8 @@
     grid-column: 2/3;
     grid-row: 1/2;
     margin-top: 100px;
+}
+#hero-msg h1 {
     color: #6B818C;
 }
 #hero-msg h4 {
