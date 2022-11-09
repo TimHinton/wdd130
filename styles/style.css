@@ -32,13 +32,16 @@
     margin-top: 100px;
 }
 #hero-msg h1 {
-    color: #6B818C;
+    color: #FF9900;
 }
 #hero-msg h4 {
     color:white;
 }
 #hero-img {
     width: 100%;
+}
+#book {
+    color: #FF9900;
 }
 #home-grid {
     display: grid;
