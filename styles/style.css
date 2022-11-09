@@ -42,10 +42,6 @@
 #hero-img {
     width: 100%;
 }
-#home-grid {
-    display: grid;
-    grid-template-columns: repeat(10, 1fr);
-}
 body {
     font-family: "Roboto Condensed", Helvetica, sans-serif;
     font-size: 22px;
@@ -70,6 +66,10 @@ nav {
 nav a:hover, .book:hover, .join:hover {
     background-color: #000000;
     color: white;
+}
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
 }
 .book, .join {
     background-color: #FF9900;
