@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato');
 
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 body {
     font-family: "IM Fell French Canon SC", Helvetica, sans-serif;
     font-size: 22px;
     background-color: #FFFFFF;
     color: black;
-    margin: 0;
+    margin: 75px;
     padding: 0;
-
 }
 
 header {
@@ -44,16 +48,22 @@ nav a:hover  {
 }
 
 .title {
+    display: flex;
     color: black;
-    text-align: center;
+    margin-top: 50px;
+    background-color: #AD7A2A;
+    justify-content: center;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 #first-para, #third-para {
     display: grid;
-    grid-template-columns: 425px 1fr;
-    padding: 75px 75px 75px 125px;
+    grid-template-columns: 425px 1fr auto;
     line-height: 1.5em;
-    margin-top: 50px;
+}
+
+#first-para {
+    padding-top: 50px;
 }
 
 #second-para {
@@ -74,15 +84,14 @@ nav a:hover  {
 #intro-grid {
     display: block;
     margin-top: 100px;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-bottom: 100px;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 #intro-first {
     display: grid;
     grid-template-columns: 386px 1fr;
     height: 504px;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 .intro-title {
@@ -151,6 +160,7 @@ nav a:hover  {
     display: grid;
     grid-template-columns: 1fr 386px;
     height: 504px;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 .intro-paragraph1, .intro-paragraph2 {
@@ -158,6 +168,7 @@ nav a:hover  {
     align-items: center;
     padding-left: 75px;
     padding-right: 75px;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 .intro-paragraph1 {
@@ -168,10 +179,54 @@ nav a:hover  {
     border: 75px solid #56faf0;
 }
 
+#support-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 550px 1fr 1fr;
+    padding-top: 50px;
+}
 
-/**--
-**/
+.support-image1 {
+    display: grid;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    border: 75px solid #56faf0;
+    box-shadow: 5px 5px 10px #6f7364;
+}
 
+#support-para1 {
+    grid-row: 2/3;
+    grid-column: 1/4;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+#support-para2 {
+    grid-row: 3/4;
+    grid-column: 1/4;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+#support-pics {
+    height: 504px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 50px 1fr;
+    box-shadow: 5px 5px 10px #6f7364;
+    background-color:  #AD7A2A;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    justify-items: center;
+}
+
+.support-image2 {
+    grid-column: 1/2;
+}
+
+.support-image3 {
+    grid-column: 3/4;
+}
 
 footer {
     background-color: #56faf0;
